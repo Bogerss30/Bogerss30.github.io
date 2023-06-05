@@ -1,0 +1,235 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+:root{
+    --color_text-primary: #AB29CA;
+    --color_text-secundary: #101E2C;
+    --color_text-tertiary: #485663;
+    --main_color-primary: #9A00BF;
+    --main_color-secundary: #F4D4FB;
+    --background-color: #FAFBFE;
+    --lowText_font_size: 16px;
+    --text_size_title: 40px;
+    --text_title_card: 24px;
+    --text_title_cardv2: 20px;
+    --text_paragraph: 16px;
+    --box_shadow-primary: 0px 6px 50px -20px rgba(0,0,0,0.2);
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.container__cover{ 
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background: #a4b8cc;
+}
+
+.cover{
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    
+}
+
+.text__cover{
+    width: 70%;
+    padding-right: 50px;
+}
+
+.text__cover h1{
+    font-size: 24px;
+    color: var(--color_text-secundary);
+}
+
+.text__cover p{
+    font-size: 18PX;
+    margin-top: 40px;
+    color: var(--color_text-tertiary);
+}
+
+.btn__text{
+    display: block;
+    width: 150px;
+    margin-top: 40px;
+    padding: 20px 20px;
+    text-align: center;
+    background: var(--main_color-primary);
+    color: white;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 300ms;
+    font-size: 21PX;
+    font-weight: bold;
+}
+
+.btn__text:hover{
+    background: transparent;
+    border: 2px solid var(--main_color-primary);
+    color: var(--color_text-primary);
+}
+
+.prueba{
+    display: flex;
+    width: 600px;
+    height: 430px;
+}
+.image__cover{
+    width: 80%;
+    padding-right: 30px;
+}
+.prueba img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5 ease;
+    
+}
+
+.prueba img:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}   
+
+/*Estilos generales CARDS*/
+
+.container__card-primary{
+    padding-top: 100px;
+}
+
+.card__primary{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 20px;
+}
+
+.text__card-primary{
+    max-width: 800px;
+    margin: auto;
+}
+
+.text__card-primary p{
+    color: var(--color_text-primary);
+    letter-spacing: 4px;
+    font-size: var(--text_paragraph);
+    font-weight: 500;
+}
+
+.text__card-primary h1{
+    font-size: var(--text_size_title);
+    font-weight: 600;
+    color: var(--color_text-secundary);
+}
+
+.container__box-cardPrimary{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+/* Tamaño que utilizan las cards*/
+
+.box__card-primary{
+    max-width: 260px;
+    padding: 60px 40px;
+    border: 1px solid #e6e6e6;
+    border-radius: 20px;
+    margin: 14px;
+    transition: all 300ms;
+}
+
+.box__card-primary:hover{
+    border: 1px solid transparent;
+    box-shadow: var(--box_shadow-primary);
+}
+
+.box__card-primary h2{
+    font-size: var(--text_title_card);
+    margin-top: 40px;
+    font-weight: 500;
+}
+
+.box__card-primary p{
+    margin-top: 20px;
+}
+
+/*Sobre nosotros*/
+
+.container__about{
+    padding: 100px 0px;
+    background: #a4b8cc;
+    margin-top: 100px;
+    padding-bottom: 150px;
+
+}
+
+.about{
+    max-width: 1400px;
+    margin: auto;
+    padding: 0px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.box{
+    max-width: 600px;
+    padding: 60px 40px;
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+    border-radius: 20px;
+    transition: all 300ms;
+}
+
+.box:hover{
+    border: 1px solid transparent;
+    box-shadow: var(--box_shadow-primary);
+}
+
+.text__about{
+    width: 100%;
+    padding-right: 40px;
+    background: #9baec0;
+}
+
+.text__about h1 {
+    color: var(--color_text-secundary);
+    font-weight: 600;
+    width: 0px auto;
+    
+}
+
+.text__about p{
+    font-size: var(--text_paragraph);
+    margin-top: 40px;
+    color: var(--color_text-tertiary);
+}
+
+
+.image__about{
+    width: 100%;
+    display: flex;
+}
+
+.image__about img{
+    width: 300px;
+}
+
+@media (max-width: 712px){
+    .container__cover{
+        
+        padding-top: 120px;
+    }
+}
